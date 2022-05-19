@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Auto with 100% width + border/content-box</title>
+    <style>
+      #auto-width {
+        background-color: cyan;
+        border: 1px solid gray;
+        font-family: monospace;
+        text-align: center;
+        width: 730px;
+      }
+
+      #auto-width div {
+        background-color: #ffe0e0;
+        border: 10px solid red;
+        margin: 10px;
+        padding: 10px;
+        text-align: left;
+      }
+
+      #auto-width-auto {
+        width: auto;
+      }
+
+      #auto-width-100-border {
+        box-sizing: border-box;
+        width: 100%; /* width (including border) = 730 px + margin = 10 px*/
+      }
+
+      #auto-width-100-content {
+        box-sizing: content-box;
+        width: 95%; /* width = 730 px + border (10px) + (padding of 20)*/
+      }
+    </style>
+  </head>
+  <body>
+    <div id="auto-width">
+      <div id="auto-width-auto">width: auto</div>
+      <div id="auto-width-100-border">width: 100%; box-sizing: border-box;</div>
+      <div id="auto-width-100-content">width: 100%; box-sizing: content-box;</div>
+    </div>
+  </body>
+</html>
