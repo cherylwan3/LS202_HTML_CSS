@@ -1,0 +1,237 @@
+* {
+  box-sizing: border-box;
+}
+.cf::before,
+.cf::after {
+  content: "";
+  display: block;
+}
+.cf::after {
+  clear: both;
+}
+body {
+  background-color: white;
+  color: #545459;
+  font: normal 16px Helvetica, Arial, sans-serif;
+}
+.container {
+  border: 2px solid #999;
+  margin: 0 auto;
+  padding: 20px;
+  width: 1000px;
+}
+section h1 {
+  font-size: 24px;
+}
+section h2 {
+  font-size: 20px;
+}
+section h3 {
+  font-size: 16px;
+}
+section h1,
+section h2,
+section h3 {
+  color: #ce4a4a; 
+  font-weight: bold;
+  margin: 20px 0;
+}
+section p {
+  line-height: 35px;
+  margin-bottom: 25px;
+}
+section .dashed-border {
+  border: 2px dashed #545459;
+  padding: 30px;
+  margin: 45px;
+  width: 650px;
+}
+section a {
+  text-decoration: none;
+  color:#545459;
+}
+section .inline-margin a {
+  margin: 30px;
+}
+section .inline-padding a {
+  padding: 30px;
+  background-color: #00800A;
+  color: white;
+}
+section .inline-float a {
+  padding: 25px;
+  background-color: #00800A;
+  border: 3px solid darkgreen;
+  color: white;
+  float: left;
+  margin: 15px;
+  text-align: center;
+  width: 120px;
+}
+
+/*** block ***/
+.block .wrapper {
+  margin-bottom: 35px;
+}
+.block .box1 {
+  background-color: #1F90FE;
+  color: white;
+}
+.block .box2 {
+  background-color: #00800A;
+  color: white;
+  height: 60px;
+  padding: 20px;
+  margin: 20px;
+}
+.block .box3 {
+  width: 90px;
+  background-color: #FF6347;
+  color: white;
+}
+.block .box4 {
+  width: 180px;
+  height: 120px;
+  background-color: #FFC0CB;
+  color: white;
+  padding: 20px;
+  margin: 20px;
+}
+.block .fl-1 {
+  background-color: #1F90FE;
+  border: 1px solid red;
+  color: white;
+  float: left;
+}
+.block .fl-2 {
+  background-color: #FF6347;
+  border: 1px solid red;
+  color: white;
+  float: right;
+}
+.block .fl-3 {
+  background-color: tomato;
+  color: white;
+  float: left;
+  width: 40%;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+}
+.block .fl-4 {
+  background-color: dodgerblue;
+  color: white;
+  float: right;
+  width: 50%;
+  height: 70px;
+  line-height: 70px;
+  text-align: center;
+}
+.block .bl-a {
+  display: block;
+  background-color: dodgerblue;
+  color: white;
+  text-align: center;
+  margin: 10px;
+  padding: 10px;
+}
+.inline-block .nav {
+  text-align: center;
+}
+.inline-block .nav a {
+  background-color: dodgerblue;
+  border: 1px solid #1b95e0;
+  color: white;
+  display: inline-block;
+  margin: 20px 8px 25px;
+  padding: 20px 30px;
+  width: 180px;
+}
+.inline-block::after {
+  border-bottom: 2px dashed #545459;
+  content: "";
+  display: block;
+  padding-top: 30px;
+  width: 100%;
+}
+.pos-fl h1 {
+  margin: 30px 0 25px;
+  text-align: center;
+}
+.pos-fl .flbx-1 {
+  background-color: #FF6347;
+  color: white;
+  float: left;
+  font-weight: bold;
+  text-align: center;
+  height: 100px;
+  width: 50%;
+  line-height: 100px;
+}
+.pos-fl .flbx-2 {
+  background-color: #1F90FE;
+  color: white;
+  float: right;
+  font-weight: bold;
+  text-align: center;
+  height: 100px;
+  width: 50%;
+  line-height: 100px;
+}
+.pos-fl .flbx-3 {
+  background-color: seagreen;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  height: 50px;
+  line-height: 50px;
+  width: 100%;
+  clear: both;
+  margin-bottom: 30px;
+}
+.pos ul {
+  list-style-type: disc;
+  margin: 0 0 45px 40px;
+}
+.pos ul li {
+  font-style: italic;
+  margin-bottom: 10px;
+}
+.pos-fixed .fixed-box {
+  background-color: #1F90FE;
+  color: white;
+  text-align: center;
+  padding: 25px 35px;
+  position: fixed;
+  bottom: 50px;
+  left: 35px;
+  width: 225px;
+  border-radius: 10px;
+}
+.pos-relative .rel-box {
+  background-color: tomato;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  width: 325px;
+  padding: 25px 35px;
+  position: relative;
+  bottom: -45px;
+  right: 90px;
+  margin-bottom: 30px;
+}
+.pos-absolute {
+  position: relative;
+}
+.pos-absolute .abs-box {
+  background-color: green;
+  border-radius: 10px;
+  color: white;
+  text-align: center; 
+  width: 200px;
+  padding: 25px 35px;
+  margin-bottom: 30px;
+  position: absolute;
+  top: -30px;
+  left: 230px;
+}
