@@ -5,7 +5,7 @@ body {
   font-family: 'Nunito Sans', sans-serif;
   font-style: normal;
   background: transparent url("bg_body.gif") 0 0 repeat;
-  padding: 160px 100px 50px 100px;
+  padding: 160px 100px 50px 140px;
 }
 
 header,
@@ -26,6 +26,7 @@ main {
   color: #000000;
   height: 710px;
   padding: 112px 94px 72px 94px;
+  text-align: center;
 }
 
 main h1 {
@@ -62,3 +63,9 @@ footer {
   height: 118px;
   text-align: center;
 }
+
+footer a {
+  padding: 32px 122px 32px 122px;
+  vertical-align: middle;
+}
+
