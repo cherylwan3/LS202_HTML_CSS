@@ -22,6 +22,7 @@ header {
 }
 
 main {
+  box-sizing: border-box;
   background: #FFFFFF;
   color: #000000;
   height: 710px;
@@ -30,42 +31,57 @@ main {
 }
 
 main h1 {
-  font-weight: 600;
+  font-weight: normal;
   font-size: 36px; 
   text-align: center;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
+  margin-bottom: 0;
 }
 
-main .section1 {
-  margin-bottom: 175px;
+article {
+  margin-bottom: 160px;
 }
 
 main h2 {
-  font-weight: ExtraBold;
+  font-weight: Bold;
   font-size: 24px;
   text-align: center;
   color: #3E98B2;
-  padding-bottom: 32px;
+  padding-bottom: 20px;
+  letter-spacing: 0.5px;
 }
 
-main .section2 {
-  margin-bottom: 68px;
+article + article {
+  padding-bottom: 68px;
 }
 
 main p {
-  font-weight: SemiBold;
+  font-weight: normal;
   font-size: 20px;
   color: #000000;
 }
 
 footer {
   background-color: #e7e7e7;
-  height: 118px;
+  margin-bottom: 85px;
+  padding: 33px 0;
+}
+
+footer ul {
+  margin: 0;
+  padding: 0;
   text-align: center;
 }
 
-footer a {
-  padding: 32px 122px 32px 122px;
-  vertical-align: middle;
+footer li {
+  display: inline;
+  padding: 0 58px;
 }
 
+footer a {
+  text-decoration: none;
+}
+
+img {
+  vertical-align: middle;
+}
