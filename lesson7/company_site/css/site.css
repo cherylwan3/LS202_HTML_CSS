@@ -35,3 +35,78 @@ nav a.active {
   color: #6db9ff;
   font-weight: bold;
 }
+
+main {
+  background: #ffffff;
+  color: #45494d;
+  padding: 100px 0 0 0;
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 600;
+  padding: 0 0 40px 0;
+}
+
+h2:before,
+h2:after {
+  display: inline-block;
+  padding: 0 24px;
+  font-size: 30px;
+  vertical-align: 4px;
+  content:"\2022"
+}
+
+main h3 {
+  font-size: 24px;
+  color: #3e59b2;
+  padding: 0 0 20px 0;
+}
+
+section {
+  font-size: 20px;
+  padding: 0 0 76px 0;
+}
+
+footer {
+  background-color: #e7e7e7;
+  padding: 90px 320px 76px;
+}
+
+footer ul {
+  margin: 0;
+  padding: 0;
+}
+
+footer li {
+  display: inline-block;
+  padding: 0 60px;
+}
+
+footer li a {
+  background: 
+    transparent 
+    url("../images/icons_social-media.png")
+    0 0 no-repeat;
+    display: block;
+    height: 46px;
+    width: 46px;
+    overflow: hidden;
+    text-indent: -8685px;
+}
+
+footer li a.twitter {
+  background-position: 0 0;
+}
+
+footer li a.facebook {
+  background-position: 0 -46px;
+}
+
+footer li a.email {
+  background-position: 0 -92px;
+}
+
+footer li a.instagram {
+  background-position: 0 -138px;
+}
