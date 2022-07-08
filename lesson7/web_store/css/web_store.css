@@ -1,0 +1,66 @@
+@import url(whitespace_reset.css);
+
+body {
+  background: #FFD510;
+  font: 19px Arial, Helvetica, sans-serif;
+}
+
+header, main {
+  margin: 0 auto;
+}
+
+header {
+  background: #057EC1;
+  box-sizing: border-box;
+  color: white;
+  width: 900px;
+  height: 105px;
+  text-align: center;
+  border-radius: 0 0 16px 16px;
+}
+
+header h1 {
+  padding: 30px 680px 30px 26px;
+  font-size: 2rem;
+}
+
+main {
+  background: #ECECEC;
+  width: 900px;
+  height: 615px;
+  margin-top: 30px;
+}
+
+main h2 {
+  font-size: 1.5rem;
+  padding: 30px 688px 0px 24px;
+}
+
+main ul {
+  width: 850px;
+  height: 486px; 
+  margin: 21.5px 12px 30.5px 12px;
+}
+
+main li {
+  box-sizing: border-box;
+  width: 200px;
+  height: 235px;
+  background-color: white;
+  float: left;
+}
+
+main img {
+  display: block;
+  height: 140px;
+  padding: 14px 0 21px 0;
+  margin: 0 auto;
+}
+
+h3, p {
+  padding-left: 15px;
+}
+
+h3 {
+  padding-bottom: 7px;
+}
