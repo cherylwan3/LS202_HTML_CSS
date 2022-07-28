@@ -40,16 +40,15 @@ main h2 {
   padding: 0 0 25px 0;
 }
 
+main ul {
+  display: grid;
+  grid-gap: 17px;
+  grid-template-columns: repeat(4, 1fr);
+}
 main li {
-  float: left;
-  width: 23.5%;
-  margin: 0 0 2% 2%;
   background-color: white;
   box-sizing: border-box;
   padding: 15px;
-}
-li:nth-of-type(4n+1) {
-  margin-left: 0;
 }
 
 main figure {
