@@ -1,0 +1,45 @@
+@import url(whitespace_reset.css);
+
+body {
+  background: #FFFFFF;
+  font: normal 16px 'Nunito Sans', Arial, sans-serif;
+  color: #444;
+  line-height: 25px;
+}
+
+a[href] {
+  text-decoration: none;
+  color: #444;
+}
+a[href]:hover {
+  text-decoration: underline;
+}
+
+#menu {
+  border-top: 10px solid #F5F5F5;; 
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+#menu:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#menu ul {
+  /* max-width: 960px; */
+  margin: 0 auto;
+  text-align: center;
+  /* display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  gap: 70px 20px; */
+}
+#menu li {
+  display: inline-block;
+  margin: 0px 25px;
+}
+#menu a {
+  line-height: 44px;
+  text-transform: uppercase;
+}
