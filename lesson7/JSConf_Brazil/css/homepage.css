@@ -40,7 +40,6 @@ a[href]:hover {
   position: fixed;
   width: 100%;
   z-index: 1;
-  overflow: hidden;
   background-color: #FFFFFF;
 }
 #menu ul {
@@ -73,7 +72,7 @@ a[href]:hover {
 /* header */
 header {
   box-sizing: border-box;
-  height: 534px;
+  height: 480px;
   text-align: center;
   width: 100%;
   background: url('../images/banner.jpg') center/cover no-repeat;
@@ -288,20 +287,78 @@ header h2 {
 .call-for-papers {
   border-top: 1px solid #EFEFEF;
   margin: 0 30px;
-  padding-bottom: 76px;
+  padding-bottom: 45px;
 }
-.call-for-papers h1 {
-  text-align: center;
-  margin-bottom: 45px;
+.call-for-papers title {
+  margin-top: 60px;
 }
 .call-for-papers p {
-  
+  margin-bottom: 18px;
 }
 
+/* sponsors */
+.sponsors {
+  border-top: 1px solid #EFEFEF;
+  margin: 0 30px;
+  margin-bottom: 70px;
+}
+dt {
+  font-weight: 600;
+  font-size: 19px;
+}
+dd {
+  display: inline-block;
+}
+.platinum dd, .gold dd {
+  padding: 12px 45px 20px 10px;
+}
+.silver img {
+  max-width: 240px;
+}
+.silver dd {
+  padding: 0 10px 10px 10px;
+}
+.support img {
+  max-width: 180px;
+}
+.support dd {
+  padding: 10px 45px 0 0;
+}
 
+/* footer */
+footer {
+  height: 340px;
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)) ,url('../images/team.jpg') center/cover no-repeat;
+}
+footer h1 {
+  color: white;
+  padding-top: 50px;
+}
+.jsconf-br-team {
+  color: white;
+  height: 186px;
+  width: 100%;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7));
+}
+.jsconf-br-team h2 {
+  font-size: 30px;
+  padding-top: 20px;
+}
+.jsconf-br-team p:nth-of-type(1) {
+  margin-bottom: 20px;
+}
+.jsconf-br-team p:nth-last-child(2) a {
+  color: #00800A;
+  /* font-size: 16px; */
+  font-weight: 700;
+}
+.jsconf-br-team p:last-child a {
+  display: inline-block;
+  margin-top: 10px;
+}
 
 /* grey border  */
-.bordered {
+.top-border {
   border-top: 1px solid #EFEFEF;
   margin: 0 30px;
 }
