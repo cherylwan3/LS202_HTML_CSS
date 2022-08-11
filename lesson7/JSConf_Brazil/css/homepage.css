@@ -117,7 +117,7 @@ header h2 {
 .speakers {
   border-top: 1px solid #EFEFEF;
   text-align: center;
-  margin: 0 30px;
+  margin: 0 30;
   padding-bottom: 65px;  
 }
 .speakers h1 {
@@ -332,8 +332,11 @@ footer {
 }
 footer h1 {
   color: white;
-  padding-top: 44px;
-  padding-bottom: 20px;
+  padding-top: 50px;
+  padding-bottom: 42px;
+  font-size: 3.5rem;
+  font-weight: 300;
+  text-align: center;
 }
 .jsconf-br-team {
   color: white;
@@ -344,6 +347,7 @@ footer h1 {
 .jsconf-br-team h2 {
   font-size: 30px;
   padding-top: 20px;
+
 }
 .jsconf-br-team p:nth-of-type(1) {
   margin-bottom: 20px;
@@ -355,7 +359,7 @@ footer h1 {
 .jsconf-br-team p:last-child a {
   display: inline-block;
   margin-top: 10px;
-}
+} 
 
 /* responsive design */
 @media (max-width: 937px) {
@@ -408,13 +412,18 @@ footer h1 {
   footer .title {
     font-size: 36px;
   }
+  .sponsors {
+    margin: 0 10px;
+  }
 }
 @media (max-width: 585px) {
   .speakers-table {
     grid-template-columns: 100%;
   }
   footer h1 {
-    padding-bottom: 20px;
+    font-size: 36px;
+    padding-top: 36px;
+    padding-bottom: 24px;
   }
 }
 
