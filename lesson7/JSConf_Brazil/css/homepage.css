@@ -116,8 +116,7 @@ header h2 {
 /* speaker section */
 .speakers {
   border-top: 1px solid #EFEFEF;
-  text-align: center;
-  margin: 0 30;
+  margin: 0 30px;
   padding-bottom: 65px;  
 }
 .speakers h1 {
@@ -426,39 +425,3 @@ footer h1 {
     padding-bottom: 24px;
   }
 }
-
-/* @media (max-width: 654px) {
-  #menu { display: none; }
-
-  header { top: 0; margin-bottom: 0; height: 300px; }
-  header h1, header h2, header .logo { top: 90px; }
-  header h1 { font-size: 40px; }
-  header h2 { font-size: 20px; }
-
-  .speakers { margin: 0; }
-  .sponsors { margin: 0 10px; }
-
-  footer h1 { font-size: 35px; }
-
-  .schedule-table tr {
-      position: relative;
-      display: block;
-      border-top: 1px solid #EFEFEF;
-  }
-  .schedule-table td {
-      display: block;
-      border: none;
-  }
-  .schedule-table th {
-      padding: 20px !important;
-      text-align: right;
-  }
-  .schedule-table td:last-child {
-      position: absolute;
-      top: 0;
-      left: 0;
-  }
-  .schedule-table img {
-      width: 80px;
-  }
-} */
