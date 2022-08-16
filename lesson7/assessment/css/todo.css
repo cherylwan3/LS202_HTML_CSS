@@ -1,3 +1,9 @@
 nav {
   background: #464f77;
 }
+select {
+  appearance: none;
+}
+fieldset {
+  border: none;
+}
