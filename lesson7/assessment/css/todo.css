@@ -1,3 +1,54 @@
+body {
+  font: normal 16px Helvetica, Arial, sans-serif;
+  letter-spacing: 1px;
+}
+.item-total {
+  display: inline-block;
+  box-sizing: border-box;
+  background: #148fd5;
+  border-radius: 50%;
+  color: #ffffff;
+  width: 18px;
+  height: 18px;
+  text-align: center; 
+  padding: 0px 5px 3px 5px;
+  font-size: 15px;
+  margin-left: 5px;
+  vertical-align: top;
+  margin-bottom: 0;
+}
+.todo-area {
+  background: #ffffff;
+  color: #060606;
+}
+.todo-area h1 {
+  display: inline-block;
+  font-size: 21px;
+  font-weight: normal;
+  margin-right: 10px;
+  padding: 0;
+}
+.todo-table {
+  /* margin-top: 28px; */
+  border-collapse: collapse;
+}
+.todo-table tr {
+  border-bottom: 1px solid #e7e7e7;
+}
+.todo-table tr:last-of-type {
+  border: none;
+}
+.todo-table td {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 12px;
+  padding-right: 6px;
+}
+.todo-table td:last-of-type {
+  padding-right: 1px;
+}
+
+
 nav {
   background: #464f77;
 }
