@@ -3,170 +3,172 @@
   <head>
     <title>Todo List</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="../css/todo.css" />
+    <link rel="stylesheet" href="../css/todo2.css" />
   </head>
   <body>
-    <nav>
+    <!-- <nav>
       <table class="all-todos">
-        <tr>
+        <ul class="item-row">
           <th scope="col">
             <img alt="all-todos" src="../images/all-todos.png" />
           </th>
           <th scope="col">All Todos</th>
-          <td>18</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>02/16</td>
-          <td>8</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>03/16</td>
-          <td>2</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>04/16</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>05/16</td>
-          <td>1</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>06/16</td>
-          <td>6</td>
-        </tr>
+          <li class="trash">18</li>
+        </ul>
+        <ul class="item-row">
+          <li class="trash"></li>
+          <li class="trash">02/16</li>
+          <li class="trash">8</li>
+        </ul>
+        <ul class="item-row">
+          <li class="trash"></li>
+          <li class="trash">03/16</li>
+          <li class="trash">2</li>
+        </ul>
+        <ul class="item-row">
+          <li class="trash"></li>
+          <li class="trash">04/16</li>
+          <li class="trash">1</li>
+        </ul>
+        <ul class="item-row">
+          <li class="trash"></li>
+          <li class="trash">05/16</li>
+          <li class="trash">1</li>
+        </ul>
+        <ul class="item-row">
+          <li class="trash"></li>
+          <li class="trash">06/16</li>
+          <li class="trash">6</li>
+        </ul>
       </table>
       <table class="completed-todos">
-        <tr>
+        <ul class="item-row">
           <th scope="col">
             <img alt="done" src="../images/done.png" />
           </th>
           <th scope="col">Completed</th>
-        </tr>
-        <tr>
-          <td></td>
-          <td>02/15</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>03/15</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>04/15</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>05/15</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>06/14</td>
-        </tr>
+        </ul>
+        <ul class="item-row">
+          <li class="trash"></li>
+          <li class="trash">02/15</li>
+        </ul>
+        <ul class="item-row">
+          <li class="trash"></li>
+          <li class="trash">03/15</li>
+        </ul>
+        <ul class="item-row">
+          <li class="trash"></li>
+          <li class="trash">04/15</li>
+        </ul>
+        <ul class="item-row">
+          <li class="trash"></li>
+          <li class="trash">05/15</li>
+        </ul>
+        <ul class="item-row">
+          <li class="trash"></li>
+          <li class="trash">06/14</li>
+        </ul>
       </table>
-    </nav>
+    </nav> -->
     <main class="todo-area">
       <h1>02/16</h1>
       <p class="item-total">8</p>
-      <table class="todo-table">
-        <tr>
-          <td class="checkbox plus">
+      <section class="todo-list">
+        <ul class="item-row">
+          <li class="checkbox plus">
             <img alt="plus" src="../images/plus.png" />
-          </td>
-          <td class="add-item">Add new to do</td>
-          <td></td>
-        </tr>
-        <tr>
-          <td class="checkbox unticked-box">
+          </li>
+          <li class="add-item">Add new to do</li>
+          <li class="trash"></li>
+        </ul>
+        <ul class="item-row">
+          <li class="checkbox unticked-box">
             <img alt="unticked-box" src="../images/unticked-box.png" />
-          </td>
-          <td class="item-number">
+          </li>
+          <li class="item-number">
             <label for="modal-toggle">Click me to toggle modal</label>
             <input type="checkbox" id="modal-toggle" />
             <p>Item 1</p>
-          </td>
-          <td>
+          </li>
+          <li class="trash">
             <img alt="trash" src="../images/trash.png" />
-          </td>
-        </tr>
-        <tr>
-          <td class="checkbox unticked-box">
+          </li>
+        </ul>
+        <ul class="item-row">
+          <li class="checkbox unticked-box">
             <img alt="unticked-box" src="../images/unticked-box.png" />
-          </td>
-          <td class="item-number"></td>
-          <td>
+          </li>
+          <li class="item-number">
+            <p>Item 2</p>
+          </li>
+          <li class="trash">
             <img alt="trash" src="../images/trash.png" />
-          </td>
-        </tr>
-        <tr>
-          <td class="checkbox ticked-box">
+          </li>
+        </ul>
+        <ul class="item-row">
+          <li class="checkbox ticked-box">
             <img alt="ticked-box" src="../images/ticked-box.png" />
-          </td>
-          <td class="item-number completed">Item 3</td>
-          <td>
+          </li>
+          <li class="item-number completed">Item 3</li>
+          <li class="trash">
             <img alt="trash" src="../images/trash.png" />
-          </td>
-        </tr>
-        <tr>
-          <td class="checkbox ticked-box">
+          </li>
+        </ul>
+        <ul class="item-row">
+          <li class="checkbox ticked-box">
             <img alt="ticked-box" src="../images/ticked-box.png" />
-          </td>
-          <td class="item-number completed">Item 4</td>
-          <td>
+          </li>
+          <li class="item-number completed">Item 4</li>
+          <li class="trash">
             <img alt="trash" src="../images/trash.png" />
-          </td>
-        </tr>
-        <tr>
-          <td class="checkbox ticked-box">
+          </li>
+        </ul>
+        <ul class="item-row">
+          <li class="checkbox ticked-box">
             <img alt="ticked-box" src="../images/ticked-box.png" />
-          </td>
-          <td class="item-number completed">Item 5</td>
-          <td>
+          </li>
+          <li class="item-number completed">Item 5</li>
+          <li class="trash">
             <img alt="trash" src="../images/trash.png" />
-          </td>
-        </tr>
-        <tr>
-          <td class="checkbox unticked-box">
+          </li>
+        </ul>
+        <ul class="item-row">
+          <li class="checkbox unticked-box">
             <img alt="unticked-box" src="../images/unticked-box.png" />
-          </td>
-          <td class="item-number">Item 6</td>
-          <td>
+          </li>
+          <li class="item-number">Item 6</li>
+          <li class="trash">
             <img alt="trash" src="../images/trash.png" />
-          </td>
-        </tr>
-        <tr>
-          <td class="checkbox unticked-box">
+          </li>
+        </ul>
+        <ul class="item-row">
+          <li class="checkbox unticked-box">
             <img alt="unticked-box" src="../images/unticked-box.png" />
-          </td>
-          <td class="item-number">Item 7</td>
-          <td>
+          </li>
+          <li class="item-number">Item 7</li>
+          <li class="trash">
             <img alt="trash" src="../images/trash.png" />
-          </td>
-        </tr>
-        <tr>
-          <td class="checkbox unticked-box">
+          </li>
+        </ul>
+        <ul class="item-row">
+          <li class="checkbox unticked-box">
             <img alt="unticked-box" src="../images/unticked-box.png" />
-          </td>
-          <td class="item-number">Item 8</td>
-          <td>
+          </li>
+          <li class="item-number">Item 8</li>
+          <li class="trash">
             <img alt="trash" src="../images/trash.png" />
-          </td>
-        </tr>
-        <tr>
-          <td class="checkbox unticked-box">
+          </li>
+        </ul>
+        <ul class="item-row">
+          <li class="checkbox unticked-box">
             <img alt="unticked-box" src="../images/unticked-box.png" />
-          </td>
-          <td class="item-number">Item 9</td>
-          <td>
+          </li>
+          <li class="item-number">Item 9</li>
+          <li class="trash">
             <img alt="trash" src="../images/trash.png" />
-          </td>
-        </tr>
-      </table>
+          </li>
+        </ul>
+      </section>
     </main>
     <form action="#" method="post" class="modal">
       <fieldset>
