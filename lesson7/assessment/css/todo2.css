@@ -31,10 +31,25 @@ nav {
   background: #464f77;
   color: #fff;
 }
-.all-todos ul {
-  
+.selected {
+  background: #38405e;
 }
-
+.date-row {
+  box-sizing: border-box;
+}
+.date-row li {
+  display: inline-block;
+  vertical-align: left;
+}
+/* all todos row */
+.date-row li:first-of-type {
+  width: 32px;
+}
+.date-row:first-of-type li:nth-of-type(2){
+  text-align: top;
+  padding-top: 8px;
+  padding-bottom: 5px;
+}
 /* main todo area */
 .todo-area {
   background: #ffffff;
