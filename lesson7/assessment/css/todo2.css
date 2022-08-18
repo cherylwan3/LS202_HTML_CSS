@@ -20,6 +20,13 @@ body {
   vertical-align: top;
   margin-bottom: 0;
 }
+/* slashed todos */
+.completed {
+  text-decoration: line-through;
+  color: #b3b3b3;
+}
+
+/* main todo area */
 .todo-area {
   background: #ffffff;
   color: #060606;
@@ -74,13 +81,19 @@ body {
 .add-item {
   color:#148fd5;
 }
-.item-number:hover :not(.completed) {
+:not(.completed).item-number:hover  {
   color: #148fd5;
 }
 
+/* nav area */
 nav {
   background: #464f77;
 }
+/* modal */
+#modal-toggle {
+  display: none;
+}
+
 select {
   appearance: none;
 }

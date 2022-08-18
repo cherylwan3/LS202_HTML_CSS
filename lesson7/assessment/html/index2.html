@@ -6,70 +6,71 @@
     <link rel="stylesheet" href="../css/todo2.css" />
   </head>
   <body>
-    <!-- <nav>
-      <table class="all-todos">
+    <nav>
+      <section class="all-todos">
         <ul class="item-row">
-          <th scope="col">
+          <li scope="col">
             <img alt="all-todos" src="../images/all-todos.png" />
-          </th>
-          <th scope="col">All Todos</th>
-          <li class="trash">18</li>
+          </li>
+          <li scope="col">All Todos</li>
+          <li>18</li>
         </ul>
         <ul class="item-row">
-          <li class="trash"></li>
-          <li class="trash">02/16</li>
-          <li class="trash">8</li>
+          <li></li>
+          <li>02/16</li>
+          <li class="item-circle">8</li>
         </ul>
         <ul class="item-row">
-          <li class="trash"></li>
-          <li class="trash">03/16</li>
-          <li class="trash">2</li>
+          <li></li>
+          <li>03/16</li>
+          <li>2</li>
         </ul>
         <ul class="item-row">
-          <li class="trash"></li>
-          <li class="trash">04/16</li>
-          <li class="trash">1</li>
+          <li></li>
+          <li>04/16</li>
+          <li>1</li>
         </ul>
         <ul class="item-row">
-          <li class="trash"></li>
-          <li class="trash">05/16</li>
-          <li class="trash">1</li>
+          <li></li>
+          <li>05/16</li>
+          <li>1</li>
         </ul>
         <ul class="item-row">
-          <li class="trash"></li>
-          <li class="trash">06/16</li>
-          <li class="trash">6</li>
+          <li></li>
+          <li>06/16</li>
+          <li>6</li>
         </ul>
-      </table>
-      <table class="completed-todos">
+      </section>
+      <section class="completed-todos">
         <ul class="item-row">
-          <th scope="col">
+          <li scope="col">
             <img alt="done" src="../images/done.png" />
-          </th>
-          <th scope="col">Completed</th>
+          </li>
+          <li scope="col">Completed</li>
         </ul>
         <ul class="item-row">
-          <li class="trash"></li>
-          <li class="trash">02/15</li>
+          <li></li>
+          <li>02/15</li>
         </ul>
         <ul class="item-row">
-          <li class="trash"></li>
-          <li class="trash">03/15</li>
+          <li></li>
+          <li>03/15</li>
         </ul>
         <ul class="item-row">
-          <li class="trash"></li>
-          <li class="trash">04/15</li>
+          <li></li>
+          <li>04/15</li>
         </ul>
         <ul class="item-row">
-          <li class="trash"></li>
-          <li class="trash">05/15</li>
+          <li></li>
+          <li>05/15</li>
         </ul>
         <ul class="item-row">
-          <li class="trash"></li>
-          <li class="trash">06/14</li>
+          <li></li>
+          <li>06/14</li>
         </ul>
-      </table>
-    </nav> -->
+      </section>
+    </nav>
+
     <main class="todo-area">
       <h1>02/16</h1>
       <p class="item-total">8</p>
@@ -86,8 +87,9 @@
             <img alt="unticked-box" src="../images/unticked-box.png" />
           </li>
           <li class="item-number">
-            <label for="modal-toggle">Click me to toggle modal</label>
-            <input type="checkbox" id="modal-toggle" />
+            <label>
+              <input type="checkbox" id="modal-toggle" />
+            </label>
             <p>Item 1</p>
           </li>
           <li class="trash">
@@ -170,7 +172,8 @@
         </ul>
       </section>
     </main>
-    <form action="#" method="post" class="modal">
+
+    <form action="#" meliod="post" class="modal">
       <fieldset>
         <label for="title">Title</label>
         <input type="text" id="title" name="item-title" placeholder="Item 2"/>
@@ -212,8 +215,8 @@
         </select>
         <img alt="select" src="../images/select.png" />
         <p>/</p>
-        <select id="month" name="month">
-          <option disabled selected>month</option>
+        <select id="monli" name="monli">
+          <option disabled selected>monli</option>
           <option value="01">January</option>
           <option value="02">February</option>
           <option value="03">March</option>
