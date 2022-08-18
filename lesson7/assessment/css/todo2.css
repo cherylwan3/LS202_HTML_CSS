@@ -5,20 +5,16 @@ body {
   letter-spacing: 1px;
 }
 /* number circle */
-.item-total {
+.num {
   display: inline-block;
   box-sizing: border-box;
-  background: #148fd5;
   border-radius: 50%;
-  color: #ffffff;
   width: 18px;
   height: 18px;
   text-align: center; 
-  padding: 0px 5px 3px 5px;
+  padding-left: 1px;
   font-size: 15px;
-  margin-left: 5px;
   vertical-align: top;
-  margin-bottom: 0;
 }
 /* slashed todos */
 .completed {
@@ -29,27 +25,65 @@ body {
 /* nav */
 nav {
   background: #464f77;
-  color: #fff;
-}
-.selected {
-  background: #38405e;
+  color: #b2b5c3;
 }
 .date-row {
   box-sizing: border-box;
 }
 .date-row li {
   display: inline-block;
-  vertical-align: left;
+  height: 40px;
+}
+.title {
+  color: #fff;
+}
+
+/* all todos area  */
+.selected {
+  background: #38405e;
+}
+
+/* first column */
+.date-row .icon-col {
+  width: 36px;
 }
 /* all todos row */
-.date-row li:first-of-type {
-  width: 32px;
+.first-row .icon-col {
+  box-sizing: border-box;
+  padding: 3px 10px 11px 0;
 }
-.date-row:first-of-type li:nth-of-type(2){
-  text-align: top;
-  padding-top: 8px;
-  padding-bottom: 5px;
+/* second column */
+.date-row .date-col {
+  vertical-align: top;
+  box-sizing: border-box;
+  padding-top: 11px;
+  /* padding-right: 105px; */
+  width: 142px;
 }
+.selected .date-col {
+  color: white;
+}
+/* third column */
+.num-col {
+  box-sizing: border-box;
+  width: 24px;
+  vertical-align: top;
+}
+.num {
+  background: #6b7292;
+}
+.first-row .num {
+
+}
+
+
+
+
+
+
+
+
+
 /* main todo area */
 .todo-area {
   background: #ffffff;
@@ -62,6 +96,10 @@ nav {
   font-size: 21px;
   font-weight: normal;
   margin-right: 10px;
+}
+.todo-area .num {
+  color: white;
+  background: #148fd5;
 }
 .todo-list {
   margin-top: 28px;
