@@ -26,6 +26,15 @@ body {
   color: #b3b3b3;
 }
 
+/* nav */
+nav {
+  background: #464f77;
+  color: #fff;
+}
+.all-todos ul {
+  
+}
+
 /* main todo area */
 .todo-area {
   background: #ffffff;
@@ -85,10 +94,6 @@ body {
   color: #148fd5;
 }
 
-/* nav area */
-nav {
-  background: #464f77;
-}
 /* modal */
 #modal-toggle {
   display: none;
