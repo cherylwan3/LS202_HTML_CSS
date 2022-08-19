@@ -3,6 +3,7 @@
 body {
   font: normal 16px Helvetica, Arial, sans-serif;
   letter-spacing: 1px;
+  display: flex;
 }
 /* number circle */
 .num {
@@ -26,62 +27,78 @@ body {
 nav {
   background: #464f77;
   color: #b2b5c3;
-}
-.date-row {
-  box-sizing: border-box;
-}
-.date-row li {
-  display: inline-block;
-  height: 40px;
+  width: 334px;
 }
 .title {
   color: #fff;
 }
-
-/* all todos area  */
 .selected {
   background: #38405e;
 }
-
-/* first column */
-.date-row .icon-col {
-  width: 36px;
+/* top and bottom padding */
+.all-todos {
+  margin-bottom: 62px;
+  padding-top: 68px;
 }
-/* all todos row */
-.first-row .icon-col {
+.completed-todos {
+  padding-bottom: 210px;
+}
+/* nav rows */
+.date-row {
+  display: flex;
+  flex-flow: row nowrap;
+}
+nav li {
+  height: 40px;
+}
+/* first column */
+.icon-col {
+  width: 138px;
+}
+.icon-col {
   box-sizing: border-box;
-  padding: 3px 10px 11px 0;
+  padding: 3px 10px 11px 102px;
+}
+.icon-col img {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: -10px;
 }
 /* second column */
-.date-row .date-col {
-  vertical-align: top;
+.date-col {
   box-sizing: border-box;
-  padding-top: 11px;
-  /* padding-right: 105px; */
   width: 142px;
+  vertical-align: top;
+  padding-top: 8px;
 }
 .selected .date-col {
   color: white;
+}
+.date-col.completed {
+  color: #b2b5c3;
 }
 /* third column */
 .num-col {
   box-sizing: border-box;
   width: 24px;
   vertical-align: top;
+  padding: 12px 32px 10px 6px;
 }
 .num {
   background: #6b7292;
 }
-.first-row .num {
-
+.selected .num {
+  background: #148fd5;
+  color: #fff;
 }
-
-
-
-
-
-
-
+.first-row .num {
+  width: 24px;
+  padding-left: 0;
+  border-radius: 45%;
+}
+.first-row .num-col {
+  padding: 9px 32px 13px 0;
+}
 
 
 /* main todo area */
@@ -90,6 +107,7 @@ nav {
   color: #060606;
   margin-right: 100px;
   margin-left: 20px;
+  width: 72%;
 }
 .todo-area h1 {
   display: inline-block;
@@ -130,6 +148,7 @@ nav {
 }
 .item-number, .add-item {
   flex-grow: 32.13;
+  width: 100%;
   padding-left: 0;
   margin-left: 0;
   text-align: left;
