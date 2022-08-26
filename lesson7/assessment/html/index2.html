@@ -6,89 +6,94 @@
     <link rel="stylesheet" href="../css/todo2.css" />
   </head>
   <body>
-    <nav>
-      <section class="all-todos">
-        <ul class="date-row first-row">
-          <li class="icon-col">
-            <img alt="all-todos" src="../images/all-todos.png" />
-          </li>
-          <li class="date-col title">All Todos</li>
-          <li class="num-col">
-            <p class="num">18</p>
-          </li>
-        </ul>
-        <ul class="date-row selected">
-          <li class="icon-col"></li>
-          <li class="date-col">02/16</li>
-          <li class="num-col">
-            <p class="num">8</p>
-          </li>
-        </ul>
-        <ul class="date-row">
-          <li class="icon-col"></li>
-          <li class="date-col">03/16</li>
-          <li class="num-col">
-            <p class="num">2</p>
-          </li>
-        </ul>
-        <ul class="date-row">
-          <li class="icon-col"></li>
-          <li class="date-col">04/16</li>
-          <li class="num-col">
-            <p class="num">1</p>
-          </li>
-        </ul>
-        <ul class="date-row">
-          <li class="icon-col"></li>
-          <li class="date-col">05/16</li>
-          <li class="num-col">
-            <p class="num">1</p>
-          </li>
-        </ul>
-        <ul class="date-row">
-          <li class="icon-col"></li>
-          <li class="date-col">06/16</li>
-          <li class="num-col">
-            <p class="num">6</p>
-          </li>
-        </ul>
-      </section>
-      <section class="completed-todos">
-        <ul class="date-row first-row">
-          <li class="icon-col">
-            <img alt="done" src="../images/done.png" />
-          </li>
-          <li class="date-col title">Completed</li>
-          <li></li>
-        </ul>
-        <ul class="date-row">
-          <li class="icon-col"></li>
-          <li class="date-col completed">02/15</li>
-          <li></li>
-        </ul>
-        <ul class="date-row">
-          <li class="icon-col"></li>
-          <li class="date-col completed">03/15</li>
-          <li></li>
-        </ul>
-        <ul class="date-row">
-          <li class="icon-col"></li>
-          <li class="date-col completed">04/15</li>
-          <li></li>
-        </ul>
-        <ul class="date-row">
-          <li class="icon-col"></li>
-          <li class="date-col completed">05/15</li>
-          <li></li>
-        </ul>
-        <ul class="date-row">
-          <li class="icon-col"></li>
-          <li class="date-col completed">06/14</li>
-          <li></li>
-        </ul>
-      </section>
-    </nav>
-
+    <header>
+      <label id="hamburger-menu">
+        <input type="checkbox" id="hamburger-toggle" />
+        <img src="../images/hamburger.png" alt="hamburger" width="23"/>
+      </label>
+      <nav id="sidebar">
+        <section class="all-todos">
+          <ul class="date-row first-row">
+            <li class="icon-col">
+              <img alt="all-todos" src="../images/all-todos.png" />
+            </li>
+            <li class="date-col title">All Todos</li>
+            <li class="num-col">
+              <p class="num">18</p>
+            </li>
+          </ul>
+          <ul class="date-row selected">
+            <li class="icon-col"></li>
+            <li class="date-col">02/16</li>
+            <li class="num-col">
+              <p class="num">8</p>
+            </li>
+          </ul>
+          <ul class="date-row">
+            <li class="icon-col"></li>
+            <li class="date-col">03/16</li>
+            <li class="num-col">
+              <p class="num">2</p>
+            </li>
+          </ul>
+          <ul class="date-row">
+            <li class="icon-col"></li>
+            <li class="date-col">04/16</li>
+            <li class="num-col">
+              <p class="num">1</p>
+            </li>
+          </ul>
+          <ul class="date-row">
+            <li class="icon-col"></li>
+            <li class="date-col">05/16</li>
+            <li class="num-col">
+              <p class="num">1</p>
+            </li>
+          </ul>
+          <ul class="date-row">
+            <li class="icon-col"></li>
+            <li class="date-col">06/16</li>
+            <li class="num-col">
+              <p class="num">6</p>
+            </li>
+          </ul>
+        </section>
+        <section class="completed-todos">
+          <ul class="date-row first-row">
+            <li class="icon-col">
+              <img alt="done" src="../images/done.png" />
+            </li>
+            <li class="date-col title">Completed</li>
+            <li></li>
+          </ul>
+          <ul class="date-row">
+            <li class="icon-col"></li>
+            <li class="date-col completed">02/15</li>
+            <li></li>
+          </ul>
+          <ul class="date-row">
+            <li class="icon-col"></li>
+            <li class="date-col completed">03/15</li>
+            <li></li>
+          </ul>
+          <ul class="date-row">
+            <li class="icon-col"></li>
+            <li class="date-col completed">04/15</li>
+            <li></li>
+          </ul>
+          <ul class="date-row">
+            <li class="icon-col"></li>
+            <li class="date-col completed">05/15</li>
+            <li></li>
+          </ul>
+          <ul class="date-row">
+            <li class="icon-col"></li>
+            <li class="date-col completed">06/14</li>
+            <li></li>
+          </ul>
+        </section>
+      </nav>
+    </header>
     <main class="todo-area">
       <h1>02/16</h1>
       <p class="num">8</p>
@@ -179,7 +184,7 @@
             <img alt="trash" src="../images/trash.png" />
           </li>
         </ul>
-        <ul class="item-row">
+        <ul class="item-row last-row">
           <li class="checkbox unticked-box">
             <img alt="unticked-box" src="../images/unticked-box.png" />
           </li>

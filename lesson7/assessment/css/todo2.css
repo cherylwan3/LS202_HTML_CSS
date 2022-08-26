@@ -5,6 +5,12 @@ body {
   letter-spacing: 1px;
   display: flex;
 }
+label {
+  cursor: pointer;
+}
+[type="checkbox"] {
+  display: none;
+}
 /* number circle */
 .num {
   display: inline-block;
@@ -14,7 +20,6 @@ body {
   height: 18px;
   text-align: center; 
   padding-left: 1px;
-  font-size: 15px;
   vertical-align: top;
 }
 /* slashed todos */
@@ -28,6 +33,7 @@ nav {
   background: #464f77;
   color: #b2b5c3;
   width: 334px;
+  display: inline-block;
 }
 .title {
   color: #fff;
@@ -102,12 +108,17 @@ nav li {
 
 
 /* main todo area */
+#hamburger-menu {
+  display: none;
+}
 .todo-area {
+  display: inline-block;
   background: #ffffff;
   color: #060606;
   margin-right: 100px;
-  margin-left: 20px;
+  margin-left: 20px; 
   width: 72%;
+  margin-top: 75px;
 }
 .todo-area h1 {
   display: inline-block;
@@ -120,17 +131,17 @@ nav li {
   background: #148fd5;
 }
 .todo-list {
-  margin-top: 28px;
+  margin-top: 25px;
 }
 /* todo list */
-.todo-list li {
-  display: inline-block;
-}
 .item-row {
   border-bottom: 1px solid #e7e7e7;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
+}
+.last-row {
+  border-bottom: none;
 }
 .item-row li:last-of-type {
   border: none;
@@ -170,10 +181,39 @@ nav li {
 #modal-toggle {
   display: none;
 }
-
 select {
   appearance: none;
 }
 fieldset {
   border: none;
 }
+
+
+@media (max-width: 768px) {
+  .todo-area {
+    margin-left: 32px;
+    width: 100%;
+  }
+  #hamburger-menu {
+    border: none;
+    display: block;
+    background: none;
+    position: absolute;
+    top: 28px;
+    left: 32px;
+  }
+  #sidebar {
+    visibility: hidden;
+    position: fixed;
+  }
+  #hamburger-menu #hamburger-toggle:checked + #sidebar {
+    visibility: visible;
+    left: 0;
+  }
+  header #hamburger-toggle:checked ~ .todo-area {
+    width: 33%;
+  }
+}
+
+
+
