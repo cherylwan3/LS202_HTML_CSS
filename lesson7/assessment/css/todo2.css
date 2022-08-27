@@ -5,13 +5,10 @@ body {
   letter-spacing: 1px;
   display: flex;
 }
-/* button */
-label {
-  cursor: pointer;
-}
-header [type="checkbox"] {
-  display: none;
-}
+/* checkbox button */
+label { cursor: pointer; }
+input[type="checkbox"] { display: none; }
+
 /* number circle */
 .num {
   display: inline-block;
@@ -181,16 +178,49 @@ nav li {
 
 /* modal */
 #modal {
+  width: 575px;
+  height: 400px;
+  display: none;
+  position: absolute;
+  top: 107px;
+  left: 50%;
+  padding: 37px 38px 40px 32px;
+  margin: 0 0 0 -143px;
+  z-index: 2;
+  background-color: #fefefe;
+  color: #060606; 
+}
+#modal-toggle:checked + #modal {
   display: block;
 }
-#modal-toggle {
-  display: none;
-}
-select {
-  appearance: none;
+#modal-toggle:checked + #modal:before {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; 
+  z-index: 1;
+  content: "";
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0.2;
 }
 fieldset {
+  width: 507px;
   border: none;
+}
+#title, #due-date {
+  height: 35px;
+}
+#title-label {
+  padding-right: 76px;
+}
+#title-input,  #day-select, #month-select, #year-select, #textarea-input {
+  border: 1px sollid #b3b3b3;
+} >>>>>>>>>>here!!!!
+
+select {
+  appearance: none;
 }
 
 @media (max-width: 768px) {

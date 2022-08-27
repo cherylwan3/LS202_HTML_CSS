@@ -91,5 +91,5 @@ input:checked + figure:before {
   left: 0; 
   z-index: 1;
   content: "";
-  background: rgba(0, 0, 0, 0.4)
+  background: rgba(0, 0, 0, 0.4);
 } 
