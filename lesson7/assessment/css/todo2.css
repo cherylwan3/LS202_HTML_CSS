@@ -221,6 +221,7 @@ fieldset {
 fieldset:last-of-type {
   margin-bottom: none;
 }
+/* title fieldset */
 #title, #due-date {
   height: 35px;
 }
@@ -231,6 +232,10 @@ fieldset:last-of-type {
   width: 396px;
   padding: 11px 76px 10px 9px;  
 }
+/* due-date fieldset */
+.select-field {
+  display: inline-block;
+}
 #due-date-label {
   margin-right: 36px;
 }
@@ -238,6 +243,7 @@ fieldset:last-of-type {
   width: 116px;
   padding: 11px 0 10px 9px;  
 }
+/* description fieldset */
 #description-label {
   padding-right: 22px;
 }
