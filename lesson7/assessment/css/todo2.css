@@ -205,22 +205,25 @@ nav li {
   background: rgba(0, 0, 0, 0.4);
   opacity: 0.2;
 }
+/* modal styling */
 button, input, select, textarea {
   font-family: inherit;
   font-size: 100%;
   box-sizing: border-box;
 }
-select {
-  appearance: none;
-}
 fieldset {
-  /* width: 508px; */
   border: none;
   margin-bottom: 24px;
 }
 fieldset:last-of-type {
   margin-bottom: none;
 }
+#month-select, #year-select, #description-input {
+  color: #b3b3b3;
+}
+#title-input,  #day-select, #month-select, #year-select, #description-input {
+  border: 1px solid #b3b3b3;
+} 
 /* title fieldset */
 #title, #due-date {
   height: 35px;
@@ -236,9 +239,11 @@ fieldset:last-of-type {
 .slash {
   display: inline-block;
   box-sizing: border-box;
-  width: 24px;
   text-align: center;
-  /* padding-right: 8px; */
+  padding: 0 4px;
+}
+select {
+  appearance: none;
 }
 .select-wrapper {
   display: inline-block;
@@ -259,13 +264,16 @@ fieldset:last-of-type {
 }
 /* description fieldset */
 #description-label {
-  padding-right: 22px;
+  vertical-align: top;
+  margin-top: 10px;
+  margin-right: 22px;
+}
+#description-input {
+  width: 396px;
+  height: 144px;
 }
 
 /* not complete */
-#title-input,  #day-select, #month-select, #year-select, #textarea-input {
-  border: 1px solid #b3b3b3;
-} 
 
 
 @media (max-width: 768px) {
