@@ -233,8 +233,22 @@ fieldset:last-of-type {
   padding: 11px 76px 10px 9px;  
 }
 /* due-date fieldset */
-.select-field {
+.slash {
   display: inline-block;
+  box-sizing: border-box;
+  width: 24px;
+  text-align: center;
+  /* padding-right: 8px; */
+}
+.select-wrapper {
+  display: inline-block;
+  position: relative;
+}
+.select-wrapper::after {
+  content: url("../images/select.png");
+  top: 11px;
+  right: 9px;
+  position: absolute;
 }
 #due-date-label {
   margin-right: 36px;
