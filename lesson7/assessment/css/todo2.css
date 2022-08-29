@@ -193,7 +193,7 @@ nav li {
 #modal-toggle:checked + #modal {
   display: block;
 }
-#modal-toggle:checked + #modal:before {
+/* #modal-toggle:checked + #modal:before {
   display: block;
   position: fixed;
   top: 0;
@@ -204,12 +204,14 @@ nav li {
   content: "";
   background: rgba(0, 0, 0, 0.4);
   opacity: 0.2;
-}
+} */
 /* modal styling */
 button, input, select, textarea {
   font-family: inherit;
   font-size: 100%;
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 fieldset {
   border: none;
@@ -271,7 +273,13 @@ select {
 #description-input {
   width: 396px;
   height: 144px;
+  resize: none;
+  overflow: auto;
+  padding: 0;
+  margin: 0;
+  text-align: left;
 }
+
 
 /* not complete */
 
