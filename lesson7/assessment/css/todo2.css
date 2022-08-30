@@ -110,8 +110,9 @@ nav li {
   display: none;
 }
 #todo-area {
-  min-width: 200px;
   display: block;
+  position: relative;
+  min-width: 200px;
   background: #ffffff;
   color: #060606;
   margin-right: 100px;
@@ -177,6 +178,9 @@ nav li {
 }
 
 /* modal */
+#modalForm-container {
+  
+}
 #modal {
   /* width: 575px;
   height: 400px; */
@@ -185,7 +189,7 @@ nav li {
   top: 107px;
   left: 50%;
   padding: 37px 38px 40px 32px;
-  margin: 0 0 0 -143px;
+  margin: 0 0 0 -288px;
   z-index: 2;
   background-color: #fefefe;
   color: #060606; 
@@ -227,16 +231,19 @@ fieldset:last-of-type {
 #title-input,  #day-select, #month-select, #year-select, #description-input {
   border: 1px solid #b3b3b3;
 } 
-/* title fieldset */
 #title, #due-date {
   height: 35px;
 }
+/* title fieldset */
 #title-label {
   margin-right: 77px;
 }
 #title-input {
   width: 396px;
   padding: 11px 76px 10px 9px;  
+}
+#title-input::placeholder {
+  color: #060606;
 }
 /* due-date fieldset */
 .slash {
@@ -283,13 +290,26 @@ select {
 #description-input::placeholder {
   text-align: left;
 }
-#title-input::placeholder {
-  color: #060606;
+/* bottom buttons */
+#bottom-buttons {
+  margin-left: 120px;
+}
+.submit-button {
+  background: #148fd5;
+  color: white;
+  border: none;
+  width: 184px;
+  height: 36px;
+  border-radius: 4px;
+  text-align: center;
+  margin-right: 20px;
 }
 
-
-/* not complete */
-
+@media (max-width: 1090) {
+  #modal {
+    display: relative;
+  }
+}
 
 @media (max-width: 768px) {
   #todo-area {
@@ -306,10 +326,6 @@ select {
    #hamburger-toggle:checked + #sidebar {
     display: inline-block;
   }
-}
-
-#last {
-  display: block;
 }
 
 
