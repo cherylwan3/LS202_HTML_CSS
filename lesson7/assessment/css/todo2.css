@@ -40,6 +40,7 @@ nav {
 .selected {
   background: #38405e;
 }
+
 /* top and bottom padding */
 #all-todos {
   margin-bottom: 62px;
@@ -49,6 +50,7 @@ nav {
   padding-bottom: 9999px;
   /* 210px; */
 }
+
 /* nav rows */
 .date-row {
   display: flex;
@@ -103,7 +105,6 @@ nav {
   padding: 12px 32px 13px 0;
 }
 
-
 /* main todo area */
 #hamburger-menu {
   display: none;
@@ -112,11 +113,11 @@ nav {
   display: block;
   position: relative;
   min-width: 200px;
+  width: 100%;
   background: #ffffff;
   color: #060606;
   margin-right: 100px;
   margin-left: 20px; 
-  width: 100%;
   margin-top: 75px;
 }
 #todo-area h1 {
@@ -128,10 +129,19 @@ nav {
 #todo-area .num {
   color: white;
   background: #148fd5;
+  margin-top: 1px;
 }
 #todo-list {
   margin-top: 25px;
 }
+/* text colors */
+.add-item {
+  color:#148fd5;
+}
+:not(.completed).item-number:hover  {
+  color: #148fd5;
+}
+
 /* todo list */
 .item-row {
   border-bottom: 1px solid #e7e7e7;
@@ -168,13 +178,6 @@ nav {
   margin-right: 0;
   text-align: right;
 }
-/* text colors */
-.add-item {
-  color:#148fd5;
-}
-:not(.completed).item-number:hover  {
-  color: #148fd5;
-}
 
 /* modal */
 #modal {
@@ -185,9 +188,9 @@ nav {
   left: 50%;
   padding: 37px 38px 40px 32px;
   margin: 0 0 0 -288px;
-  z-index: 9999;
   background-color: white;
   color: #060606; 
+  z-index: 9999;
 }
 #modal-toggle:checked + #modal::before {
   position: fixed;
@@ -195,10 +198,10 @@ nav {
   right: 0;
   bottom: 0;
   left: 0; 
-  z-index: -10;
   content: "";
   background: black;
   opacity: 0.2;
+  z-index: -10;
 }
 #modal-toggle:checked + #modal {
   display: block;
@@ -212,23 +215,26 @@ button, input, select, textarea {
   padding: 0;
   margin: 0;
   letter-spacing: 1px;
+  position: relative;
+  z-index: 2;
 }
 fieldset {
   border: none;
   margin-bottom: 24px;
 }
 fieldset:last-of-type {
-  margin-bottom: none;
+  margin-bottom: 0;
 }
-#month-select, #year-select, #description-input {
+/* #month-select, #year-select, #description-input {
   color: #b3b3b3;
-}
+} */
 #title-input,  #day-select, #month-select, #year-select, #description-input {
   border: 1px solid #b3b3b3;
 } 
 #title, #due-date {
   height: 35px;
 }
+
 /* title fieldset */
 #title-label {
   margin-right: 77px;
@@ -240,6 +246,7 @@ fieldset:last-of-type {
 #title-input::placeholder {
   color: #060606;
 }
+
 /* due-date fieldset */
 .slash {
   display: inline-block;
@@ -267,6 +274,7 @@ select {
   width: 116px;
   padding: 11px 0 10px 9px;  
 }
+
 /* description fieldset */
 #description-label {
   vertical-align: top;
@@ -285,6 +293,7 @@ select {
 #description-input::placeholder {
   text-align: left;
 }
+
 /* bottom buttons */
 #bottom-buttons {
   margin-left: 120px;
