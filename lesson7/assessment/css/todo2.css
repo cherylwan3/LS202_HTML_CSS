@@ -14,10 +14,11 @@ input[type="checkbox"] { display: none; }
   display: inline-block;
   box-sizing: border-box;
   border-radius: 50%;
-  width: 18px;
-  height: 18px;
+  width: 20px;
+  height: 20px;
   text-align: center; 
   padding-left: 1px;
+  padding-top: 1px;
   vertical-align: top;
 }
 /* slashed todos */
@@ -45,35 +46,33 @@ nav {
   padding-top: 68px;
 }
 #completed-todos {
-  padding-bottom: 210px;
+  padding-bottom: 9999px;
+  /* 210px; */
 }
 /* nav rows */
 .date-row {
   display: flex;
+  height: 45px;
   flex-flow: row nowrap;
-}
-nav li {
-  height: 40px;
 }
 /* first column */
 .icon-col {
-  width: 138px;
-}
-.icon-col {
   box-sizing: border-box;
+  width: 138px;
   padding: 3px 10px 11px 102px;
 }
 .icon-col img {
   display: inline-block;
   vertical-align: top;
-  margin-right: -10px;
+  padding-top: 2px;
 }
 /* second column */
 .date-col {
   box-sizing: border-box;
   width: 142px;
+  text-align: left;
   vertical-align: top;
-  padding-top: 8px;
+  padding-top: 13px;
 }
 .selected .date-col {
   color: white;
@@ -95,13 +94,13 @@ nav li {
   background: #148fd5;
   color: #fff;
 }
-.first-row .num {
-  width: 24px;
+.header-row .num {
+  width: 26px;
   padding-left: 0;
-  border-radius: 45%;
+  border-radius: 40%;
 }
-.first-row .num-col {
-  padding: 9px 32px 13px 0;
+.header-row .num-col {
+  padding: 12px 32px 13px 0;
 }
 
 
@@ -178,37 +177,33 @@ nav li {
 }
 
 /* modal */
-#modalForm-container {
-  
-}
 #modal {
-  /* width: 575px;
-  height: 400px; */
+  min-width: 576px;
   display: none;
   position: absolute;
   top: 107px;
   left: 50%;
   padding: 37px 38px 40px 32px;
   margin: 0 0 0 -288px;
-  z-index: 2;
-  background-color: #fefefe;
+  z-index: 9999;
+  background-color: white;
   color: #060606; 
 }
-#modal-toggle:checked + #modal {
-  display: block;
-}
-/* #modal-toggle:checked + #modal:before {
-  display: block;
+#modal-toggle:checked + #modal::before {
   position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0; 
-  z-index: 1;
+  z-index: -10;
   content: "";
-  background: rgba(0, 0, 0, 0.4);
+  background: black;
   opacity: 0.2;
-} */
+}
+#modal-toggle:checked + #modal {
+  display: block;
+}
+
 /* modal styling */
 button, input, select, textarea {
   font-family: inherit;
@@ -303,12 +298,6 @@ select {
   border-radius: 4px;
   text-align: center;
   margin-right: 20px;
-}
-
-@media (max-width: 1090) {
-  #modal {
-    display: relative;
-  }
 }
 
 @media (max-width: 768px) {
