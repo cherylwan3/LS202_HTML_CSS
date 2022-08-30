@@ -3,8 +3,9 @@
 body {
   font: normal 15px Helvetica, Arial, sans-serif;
   letter-spacing: 1px;
-  display: flex;
   font-weight: 300;
+  display: flex;
+  flex-flow: row nowrap;
 }
 /* checkbox button */
 label { cursor: pointer; }
@@ -31,7 +32,7 @@ input[type="checkbox"] { display: none; }
 /* nav */
 /* top and bottom padding */
 #all-todos {
-  margin-bottom: 62px;
+  margin-bottom: 55px;
   padding-top: 68px;
 }
 #completed-todos {
@@ -42,7 +43,6 @@ nav {
   background: #464f77;
   color: #b2b5c3;
   width: 334px;
-  display: block;
 }
 /* nav rows */
 .date-row {
@@ -65,10 +65,6 @@ nav {
   padding-top: 2px;
 }
 /* second column */
-.title {
-  color: #fff;
-  font-size: 18px;
-}
 .date-col {
   box-sizing: border-box;
   width: 142px;
@@ -81,6 +77,11 @@ nav {
 }
 .date-col.completed {
   color: #b2b5c3;
+}
+.title {
+  color: #fff;
+  font-size: 17px;
+  padding-top: 8px;
 }
 
 /* third column */
@@ -111,8 +112,8 @@ nav {
   display: none;
 }
 #todo-area {
-  display: block;
   position: relative;
+  z-index: 1;
   min-width: 200px;
   width: 100%;
   background: #ffffff;
@@ -143,6 +144,7 @@ nav {
 }
 :not(.completed).item-number:hover  {
   color: #148fd5;
+  cursor: pointer;
 }
 
 /* todo list */
@@ -193,7 +195,7 @@ nav {
   margin: 0 0 0 -288px;
   background-color: white;
   color: #060606; 
-  z-index: 9999;
+  z-index: 3;
 }
 #modal-toggle:checked + #modal::before {
   position: fixed;
@@ -204,7 +206,7 @@ nav {
   content: "";
   background: black;
   opacity: 0.2;
-  z-index: -10;
+  z-index: -1;
 }
 #modal-toggle:checked + #modal {
   display: block;
