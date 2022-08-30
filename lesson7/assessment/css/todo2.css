@@ -1,9 +1,10 @@
 @import url('whitespace_reset.css');
 
 body {
-  font: normal 16px Helvetica, Arial, sans-serif;
+  font: normal 15px Helvetica, Arial, sans-serif;
   letter-spacing: 1px;
   display: flex;
+  font-weight: 300;
 }
 /* checkbox button */
 label { cursor: pointer; }
@@ -28,19 +29,6 @@ input[type="checkbox"] { display: none; }
 }
 
 /* nav */
-nav {
-  background: #464f77;
-  color: #b2b5c3;
-  width: 334px;
-  display: block;
-}
-.title {
-  color: #fff;
-}
-.selected {
-  background: #38405e;
-}
-
 /* top and bottom padding */
 #all-todos {
   margin-bottom: 62px;
@@ -50,12 +38,20 @@ nav {
   padding-bottom: 9999px;
   /* 210px; */
 }
-
+nav {
+  background: #464f77;
+  color: #b2b5c3;
+  width: 334px;
+  display: block;
+}
 /* nav rows */
 .date-row {
   display: flex;
-  height: 45px;
+  height: 40px;
   flex-flow: row nowrap;
+}
+.selected {
+  background: #38405e;
 }
 /* first column */
 .icon-col {
@@ -69,6 +65,10 @@ nav {
   padding-top: 2px;
 }
 /* second column */
+.title {
+  color: #fff;
+  font-size: 18px;
+}
 .date-col {
   box-sizing: border-box;
   width: 142px;
@@ -82,6 +82,7 @@ nav {
 .date-col.completed {
   color: #b2b5c3;
 }
+
 /* third column */
 .num-col {
   box-sizing: border-box;
@@ -125,6 +126,8 @@ nav {
   font-size: 21px;
   font-weight: normal;
   margin-right: 10px;
+  margin-left: 10px;
+  font-weight: lighter;
 }
 #todo-area .num {
   color: white;
@@ -132,7 +135,7 @@ nav {
   margin-top: 1px;
 }
 #todo-list {
-  margin-top: 25px;
+  margin-top: 24px;
 }
 /* text colors */
 .add-item {
@@ -156,8 +159,8 @@ nav {
   border: none;
 }
 .item-row li {
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-top: 14px;
+  padding-bottom: 14px;
 }
 .checkbox {
   box-sizing: border-box;
@@ -209,14 +212,13 @@ nav {
 
 /* modal styling */
 button, input, select, textarea {
+  appearance: none;
   font-family: inherit;
   font-size: 100%;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   letter-spacing: 1px;
-  position: relative;
-  z-index: 2;
 }
 fieldset {
   border: none;
@@ -253,9 +255,6 @@ fieldset:last-of-type {
   box-sizing: border-box;
   text-align: center;
   padding: 0 4px;
-}
-select {
-  appearance: none;
 }
 .select-wrapper {
   display: inline-block;
