@@ -193,10 +193,10 @@
           </li>
         </ul>
       </section>
-
+      
       <input type="checkbox" id="modal-toggle" />
-      <section id="modal">
-        <form action="#" method="post">
+      <section id="modal-container">    
+        <form action="#" method="post" id="modal">
           <fieldset id="title">
             <label id="title-label" for="title-input">Title</label>
             <input type="text" id="title-input" name="item-title" placeholder="Item 2"/>
@@ -353,9 +353,7 @@
             <label id="description-label" for="description-input"> 
               Description
             </label>
-            <textarea id="description-input" name="description">
-              Description
-            </textarea>
+            <textarea id="description-input" name="description">Description</textarea>
           </fieldset>
           <fieldset id="bottom-buttons">
             <button class="submit-button">Save</button>

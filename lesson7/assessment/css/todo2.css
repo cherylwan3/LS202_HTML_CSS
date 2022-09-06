@@ -113,7 +113,6 @@ nav {
 }
 #todo-area {
   position: relative;
-  z-index: 1;
   min-width: 200px;
   width: 100%;
   background: #ffffff;
@@ -195,10 +194,10 @@ nav {
   margin: 0 0 0 -288px;
   background-color: white;
   color: #060606; 
-  z-index: 3;
 }
-#modal-toggle:checked + #modal::before {
+#modal-toggle:checked + #modal-container::before {
   position: fixed;
+  display: block;
   top: 0;
   right: 0;
   bottom: 0;
@@ -206,9 +205,8 @@ nav {
   content: "";
   background: black;
   opacity: 0.2;
-  z-index: -1;
 }
-#modal-toggle:checked + #modal {
+#modal-toggle:checked ~ #modal-container #modal { 
   display: block;
 }
 
@@ -221,6 +219,7 @@ button, input, select, textarea {
   padding: 0;
   margin: 0;
   letter-spacing: 1px;
+  cursor: pointer;
 }
 fieldset {
   border: none;
@@ -287,7 +286,7 @@ fieldset:last-of-type {
   height: 144px;
   resize: none;
   overflow: auto;
-  padding: 0;
+  padding: 10px;
   margin: 0;
   text-align: left;
 }
